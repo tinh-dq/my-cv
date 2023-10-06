@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 8px;
+  font-size: 18px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+strong {
+  color: #555;
+}
+
+.top-info {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 4px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+.top-info__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.top-info__left img {
+  width: 100%;
+}
+.top-info__right {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+}
+.top-info__right h1 {
+  margin-bottom: 0;
+}
+.top-info__links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.top-info__link {
+  width: 50%;
+  display: flex;
+  column-gap: 10%;
+  align-items: center;
+}
+.top-info__link img {
+  width: 16px;
+  height: 16px;
+}
+.top-info__link span {
+  line-height: 32px;
+}
+@media (max-width: 767px) {
+  .top-info__left {
+    width: 100%;
+  }
+  .top-info__left img {
+    width: 36vw;
+    height: 36vw;
+  }
+  .top-info__right {
+    width: 100%;
+  }
+  .top-info__right h1 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .top-info__right > h4 {
+    text-align: center;
+  }
+  .top-info__links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-info__link {
+    width: 285px;
+  }
+}
+
+.summary h2,
+.detail h2 {
+  margin-top: 32px;
+}
+.summary h3,
+.detail h3 {
+  margin-top: 28px;
+}
+.summary h2:after,
+.detail h2:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #434e5e;
+}
+
+.detail {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.detail p {
+  margin-left: 16px;
+}
+
+.experience {
+  width: 75%;
+  padding-right: 16px;
+}
+
+.education {
+  width: 25%;
+}
+
+@media (max-width: 1023px) {
+  .experience {
+    width: 100%;
+    padding-right: 0;
+  }
+  .education {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
